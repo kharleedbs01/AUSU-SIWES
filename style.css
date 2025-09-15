@@ -1,0 +1,104 @@
+/* Reset and Body */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-image: url(https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?cs=srgb&dl=pexels-pixabay-260922.jpg&fm=jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+  position: relative;
+}
+
+/* Dark overlay */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+/* Header */
+header h1 {
+  background-color: rgba(0, 119, 182, 0.8);
+  color: white;
+  padding: 15px;
+  margin: 0;
+}
+
+/* Navigation Menu */
+.nav-menu {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.nav-menu li {
+  display: inline;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #ffdd57;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+  padding: 5px 10px;
+}
+
+.nav-menu a:hover {
+  color: #ffa500;
+  background-color: rgba(0,0,0,0.3);
+  border-radius: 5px;
+}
+
+/* Main Content */
+main, section {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  margin: 20px auto;
+  width: 80%;
+  border-radius: 8px;
+}
+
+/* Headings */
+h2 {
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+}
+
+/* Button */
+button {
+  margin-top: 20px;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #0077b6;
+  color: white;
+}
+
+button:hover {
+  background-color: #023e8a;
+}
+
+/* Footer */
+footer {
+  background: rgba(2, 62, 138, 0.9);
+  color: white;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+}
